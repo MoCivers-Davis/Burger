@@ -1,0 +1,65 @@
+<div class="jumbotron jumbotron-fluid">
+  <div class="container">
+    <h1 class="display-4">MO's Eat Da Burger App</h1>
+    <p class="lead">The best burger app for tracking the most best tasting burgers in the entire world!.</p>
+  </div>
+</div>
+
+
+<div class="card-body">
+
+    <div class="firstPart">
+
+        <form class="selectionForm">
+            <div class="form-group">
+                <h2><label class="new-burger"><strong>Eat-Da-Burger</strong></label></h2>
+                <input type="text" class="form-control" id="burger" name="new_burger" rows="3"></input>
+                <div class=submit-button>
+                    <button class="btn btn-primary" type="submit" id="add-burger" value="Submit">Add My
+                        Burger</button>
+                </div>
+            </div>
+        </form>
+        <p class="card-text">What Burger Are You Craving?</p>
+    </div>
+
+    <div class="card text-center">
+        <div class="uneated">
+
+            <ul>
+                {{#each burger_name}}
+                {{#unless devoured}}
+
+                <li>
+                    <span> {{id}}.{{burger_name}}</span>
+                    <button type="button" class="btn change-eaten btn-success" data-id="{{id}}"
+                        data-devoured="{{devoured}}">Devour</button>
+
+                </li>
+
+                {{/unless}}
+                {{/each}}
+
+            </ul>
+
+        </div>
+
+        <div class="devoured">
+
+            <ul>
+                {{#each burger_name}}
+                {{#if devoured}}
+
+                <li>
+                    {{burger_name}}
+                    <button type="button" class="delete" class="btn btn-danger" data-id="{{this.id}}">devoured</button>
+                </li>
+                {{/if}}
+                {{/each}}
+            </ul>
+        </div>
+    </div>
+
+
+</div>
+</div>

@@ -1,0 +1,20 @@
+.card {
+    margin: 27px;
+    background-color: lightseagreen;
+}
+
+.form-control {
+    width: 380px;
+    margin: auto;
+}
+li {
+    margin-bottom: 10px;
+    padding: 10px;
+    width: 200px;
+    background-color: lightsteelblue;
+}
+
+.submit-button {
+    margin:30;
+}
+
