@@ -9,7 +9,7 @@ var burger = require("../models/burger.js")
 
 router.get("/", function (req, res) {
     console.log("This is a test")
-    burger.getAll(function (data){
+    burger.getAll(function (data){ //getAll Needs to align with my burger.js
         var dataObject = {burgers: data};
         console.log(dataObject);
         res.render("index", dataObject)
@@ -17,7 +17,7 @@ router.get("/", function (req, res) {
 });
 
 router.post("/api/burgers", function (req, res) {
-    burger.add(
+    burger.createBurger( //createBurger Needs to align with my burger.js
         ["burger_name"], [req.body.burger_name], function (result) {
             res.json({ id: result.insertId})
     });
@@ -26,7 +26,7 @@ router.post("/api/burgers", function (req, res) {
 router.put("/api/burgers/:id", function (req, res) {
     var condition = "devoured = " + 0 && req.params.id;
 
-    burger.updateBurger({
+    burger.updateBurger({ //updateBurger Needs to align with my burger.js
         devoured: req.body.devoured = 1
     },
      condition, function (result) {
