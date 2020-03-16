@@ -1,3 +1,6 @@
+.container {
+    text-align: center;
+}
 .card {
     margin: 27px;
     background-color: lightseagreen;
@@ -16,5 +19,14 @@ li {
 
 .submit-button {
     margin:30;
+    padding-top: 10px;
+    text-align: center;
 }
 
+.card-text {
+    text-align: center;
+}
+
+.form-group {
+    text-align: center;
+}
