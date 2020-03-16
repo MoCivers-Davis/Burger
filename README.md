@@ -1,5 +1,8 @@
 ![Burger App](public/assets/img/burger-app.png)
+<<<<<<< HEAD
 
+=======
+>>>>>>> d9183cc6454170acf013c524dd319b39726bd86a
 # Eat-Da-Burger
 
 ## Description
