@@ -7,12 +7,19 @@
     "test": "echo \"Error: no test specified\" && exit 1",
     "start": "node server.js"
   },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/MoCivers-Davis/Burger.git"
+  },
   "author": "",
   "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/MoCivers-Davis/Burger/issues"
+  },
+  "homepage": "https://github.com/MoCivers-Davis/Burger#readme",
   "dependencies": {
     "express": "^4.17.1",
     "express-handlebars": "^3.1.0",
-    "inquirer": "^7.1.0",
     "mysql": "^2.18.1"
   }
 }

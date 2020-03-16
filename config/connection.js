@@ -2,7 +2,7 @@
 const util = require("util");
 var mysql = require("mysql");
 
-if (process.env.JAWSDB_URL){ //I'm still researching how this works.  I recall the instructor saying that we needed this.
+if (process.env.JAWSDB_URL){ 
     connecton = mysql.createConnection(process.env.JAWSDB_URL);
 }
 else{

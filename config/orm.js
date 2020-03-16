@@ -1,5 +1,5 @@
 // Import MySQL connection.
-const connection = require("../config/connection.js");
+const connection = require("./connection.js");
 
 const orm = {
     findAll: async function (table, cb) {
