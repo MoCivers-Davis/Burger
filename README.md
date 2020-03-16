@@ -1,4 +1,8 @@
+
 ![Burger Appl](assets/img/burger-app.png)
+
+![Burger App](public/assets/img/burger-app.png)
+
 # Eat-Da-Burger
 
 ## Description
